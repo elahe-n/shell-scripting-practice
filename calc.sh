@@ -94,5 +94,10 @@ while true; do
         ;;
 
 # If the selection does not match a support operation, display an error message.
+        *)
+                    echo "Sorry, your entry is not in our options"
+                ;;
+      
+    esac
     
 # When the operation is complete, redisplay the menu.
