@@ -101,3 +101,5 @@ while true; do
     esac
     
 # When the operation is complete, redisplay the menu.
+# With the help of WHILE loop, if operation is complete, the menu redisplay.
+done
