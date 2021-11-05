@@ -3,12 +3,12 @@
 # Define functions to Add and subtract
 
 add() {
-    let total=$1+$2
+    total=`echo $1 + $2 | bc`
     echo "**** The result of adding $1 and $2 is $total ****"  
 }
 
 subtract() {
-    let result=$1-$2
+    result=`echo $1 - $2 | bc`
     echo "***  The result of subtracting $1 and $2 is $result  ***"  
 }
 
