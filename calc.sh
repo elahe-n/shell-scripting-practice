@@ -1,6 +1,19 @@
 #! /usr/bin/env bash
 
+# Define functions to Add and subtract
+
+add() {
+    let total=$1+$2
+    echo "**** The result of adding $1 and $2 is $total ****"  
+}
+
+subtract() {
+    let result=$1-$2
+    echo "***  The result of subtracting $1 and $2 is $result  ***"  
+}
+
 # When the program is first loaded, display a greeting to the user.
+
 # Then, display a menu that outlines the possible operations:
   # Add
   # Subtract
