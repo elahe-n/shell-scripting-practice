@@ -24,7 +24,12 @@ echo "**** Welcome to my calculator program usin shell scripting :) ****"
 while true; do
     echo "Please make a choice:      Add/+       Subtract/-       Exit   "
 
-# Then, capture the user selection.
+# Then, capture the user selection. 
+# Change user input to lowercase to have interity in inputs and put it in new variable named operation.
+    read input
+    operation=${input,,}
+
 # If the selection matches a supported operation, execute the operation.
+
 # If the selection does not match a support operation, display an error message.
 # When the operation is complete, redisplay the menu.
