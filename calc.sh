@@ -14,6 +14,8 @@ subtract() {
 
 # When the program is first loaded, display a greeting to the user.
 
+echo "**** Welcome to my calculator program usin shell scripting :) ****"
+
 # Then, display a menu that outlines the possible operations:
   # Add
   # Subtract
