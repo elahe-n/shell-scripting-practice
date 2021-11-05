@@ -30,6 +30,69 @@ while true; do
     operation=${input,,}
 
 # If the selection matches a supported operation, execute the operation.
+    case $operation in
+        "add"| "+")
+            echo " ***  We are going to ADD two numbers  *** "
+            while true; do
+                echo "_ Please enter the first number: "
+                read a
+                # Validating inputs (for first number): If input field is left blank or other characters except numbers have been entered, display appropriate message and get another input.
+                if [ -z "$a" ] || ! [[ "$a" =~ ^[+-]?[0-9]+\.?[0-9]*$ ]] 
+                    then 
+                        echo 'Ooops, Inputs must be a NUMBERS AND cannot be blank. Please try again!' 
+                    else
+                        break  
+                fi 
+            done
+
+            while true; do
+                echo "_ Please enter the second number: "
+                read b
+                # Validating inputs (for second number): If input field is left blank or other characters except numbers have been entered, display appropriate message and get another input.
+                if [ -z "$b" ] || ! [[ "$b" =~ ^[+-]?[0-9]+\.?[0-9]*$ ]] 
+                    then 
+                        echo 'Oops, Inputs must be a NUMBERS AND cannot be blank. Please try again!'
+                    else
+                        break 
+                fi 
+            done
+
+            add $a $b
+        ;;
+        "subtract"| "-")
+            echo "*** We are going to SUBTRACT two numbers ***"
+            while true; do
+                echo "_ Please enter the first number: "
+                read a
+                # Validating inputs (for first number): If input field is left blank or other characters except numbers have been entered, display appropriate message and get another input.
+                if [ -z "$a" ] || ! [[ "$a" =~ ^[+-]?[0-9]+\.?[0-9]*$ ]] 
+                    then 
+                        echo 'Ooops, Inputs must be a NUMBERS AND cannot be blank. Please try again!' 
+                    else
+                        break  
+                fi 
+            done
+
+            while true; do
+                echo "_ Please enter the second number: "
+                read b
+                # Validating inputs (for second number): If input field is left blank or other characters except numbers have been entered, display appropriate message and get another input. 
+                if [ -z "$b" ] || ! [[ "$b" =~ ^[+-]?[0-9]+\.?[0-9]*$ ]] 
+                    then 
+                        echo 'Oops, Inputs must be a NUMBERS AND cannot be blank. Please try again!'
+                    else
+                        break 
+                fi 
+            done
+            
+            subtract $a $b
+        ;;
+        # If user select exit to stop the program:        
+        "exit")
+            echo "Bye, now we are leaving, see you soon..."
+            break
+        ;;
 
 # If the selection does not match a support operation, display an error message.
+    
 # When the operation is complete, redisplay the menu.
