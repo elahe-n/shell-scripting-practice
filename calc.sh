@@ -9,7 +9,7 @@ add() {
 
 subtract() {
     result=`echo $1 - $2 | bc`
-    echo "***  The result of subtracting $1 and $2 is $result  ***"  
+    echo "**** The result of subtracting $1 and $2 is $result ****"  
 }
 
 # When the program is first loaded, display a greeting to the user.
@@ -22,6 +22,7 @@ echo "**** Welcome to my calculator program usin shell scripting :) ****"
   # Exit
 
 while true; do
+    echo "****************************************************************"
     echo "Please make a choice:      Add/+       Subtract/-       Exit   "
 
 # Then, capture the user selection. 
