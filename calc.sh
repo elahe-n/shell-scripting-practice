@@ -40,7 +40,7 @@ while true; do
                 # Validating inputs (for first number): If input field is left blank or other characters except numbers have been entered, display appropriate message and get another input.
                 if [ -z "$a" ] || ! [[ "$a" =~ ^[+-]?[0-9]+\.?[0-9]*$ ]] 
                     then 
-                        echo 'Ooops, Inputs must be a NUMBERS AND cannot be blank. Please try again!' 
+                        echo 'Ooops, Inputs must be NUMBERS AND cannot be blank. Please try again!' 
                     else
                         break  
                 fi 
@@ -52,7 +52,7 @@ while true; do
                 # Validating inputs (for second number): If input field is left blank or other characters except numbers have been entered, display appropriate message and get another input.
                 if [ -z "$b" ] || ! [[ "$b" =~ ^[+-]?[0-9]+\.?[0-9]*$ ]] 
                     then 
-                        echo 'Oops, Inputs must be a NUMBERS AND cannot be blank. Please try again!'
+                        echo 'Oops, Inputs must be NUMBERS AND cannot be blank. Please try again!'
                     else
                         break 
                 fi 
@@ -68,7 +68,7 @@ while true; do
                 # Validating inputs (for first number): If input field is left blank or other characters except numbers have been entered, display appropriate message and get another input.
                 if [ -z "$a" ] || ! [[ "$a" =~ ^[+-]?[0-9]+\.?[0-9]*$ ]] 
                     then 
-                        echo 'Ooops, Inputs must be a NUMBERS AND cannot be blank. Please try again!' 
+                        echo 'Ooops, Inputs must be NUMBERS AND cannot be blank. Please try again!' 
                     else
                         break  
                 fi 
@@ -80,7 +80,7 @@ while true; do
                 # Validating inputs (for second number): If input field is left blank or other characters except numbers have been entered, display appropriate message and get another input. 
                 if [ -z "$b" ] || ! [[ "$b" =~ ^[+-]?[0-9]+\.?[0-9]*$ ]] 
                     then 
-                        echo 'Oops, Inputs must be a NUMBERS AND cannot be blank. Please try again!'
+                        echo 'Oops, Inputs must be NUMBERS AND cannot be blank. Please try again!'
                     else
                         break 
                 fi 
@@ -96,7 +96,7 @@ while true; do
 
 # If the selection does not match a support operation, display an error message.
         *)
-                    echo "Sorry, your entry is not in our options"
+                    echo "Sorry, your entry is not in our options, Please try again..."
                 ;;
       
     esac
